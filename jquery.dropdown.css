@@ -1,7 +1,7 @@
 .dropdownjs {
   position: relative;
 }
-.dropdownjs  * {
+.dropdownjs * {
   box-sizing: border-box;
 }
 .dropdownjs > input {
@@ -11,8 +11,8 @@
 }
 .dropdownjs > input.focus ~ ul {
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 .dropdownjs > ul {
   position: absolute;
@@ -20,32 +20,32 @@
   margin: 0;
   min-width: 200px;
   -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
   z-index: 10000;
 }
-.dropdownjs > ul[placement=top-left] {
+.dropdownjs > ul[placement="top-left"] {
   -webkit-transform-origin: bottom left;
-      -ms-transform-origin: bottom left;
-          transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  transform-origin: bottom left;
   bottom: 0;
   left: 0;
 }
-.dropdownjs > ul[placement=bottom-left] {
+.dropdownjs > ul[placement="bottom-left"] {
   -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
   top: 0;
   left: 0;
 }
-.dropdownjs > ul  > li {
+.dropdownjs > ul > li {
   list-style: none;
   padding: 10px 20px;
 }
-.dropdownjs > ul  > li.dropdownjs-add {
+.dropdownjs > ul > li.dropdownjs-add {
   padding: 0;
 }
-.dropdownjs > ul  > li.dropdownjs-add > input {
+.dropdownjs > ul > li.dropdownjs-add > input {
   border: 0;
   padding: 10px 20px;
   width: 100%;
@@ -59,13 +59,14 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
   cursor: default;
 }
 .dropdownjs > ul {
-  background: #FFF;
+  background: #fff;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.12);
   -webkit-transition: -webkit-transform 0.2s ease-out;
-          transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
   padding: 10px;
   overflow: auto;
   max-width: 500px;
+  max-height: 200px;
 }
 .dropdownjs > ul > li {
   cursor: pointer;
@@ -90,29 +91,29 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
   line-height: 1;
   color: #000;
   text-shadow: 0 1px 0 #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 .dropdownjs > ul > li:hover > .close:hover:before {
-  opacity: .9;
+  opacity: 0.9;
 }
 
-.rtl .dropdownjs > input{
-	padding-right: 0;
-	padding-left: 30px;
+.rtl .dropdownjs > input {
+  padding-right: 0;
+  padding-left: 30px;
 }
 
-.rtl .dropdownjs > ul[placement=top-right] {
+.rtl .dropdownjs > ul[placement="top-right"] {
   -webkit-transform-origin: bottom right;
-      -ms-transform-origin: bottom right;
-          transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  transform-origin: bottom right;
   bottom: 0;
   left: auto;
   right: 0;
 }
-.rtl .dropdownjs > ul[placement=bottom-right] {
+.rtl .dropdownjs > ul[placement="bottom-right"] {
   -webkit-transform-origin: top right;
-      -ms-transform-origin: top right;
-          transform-origin: top right;
+  -ms-transform-origin: top right;
+  transform-origin: top right;
   top: 0;
   left: auto;
   right: 0;
