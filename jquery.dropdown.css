@@ -66,6 +66,7 @@ select[data-dropdownjs][disabled] + .dropdownjs > input[readonly] {
   padding: 10px;
   overflow: auto;
   max-width: 500px;
+  max-height: 500px;
 }
 .dropdownjs > ul > li {
   cursor: pointer;
